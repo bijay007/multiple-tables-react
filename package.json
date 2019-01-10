@@ -1,0 +1,41 @@
+{
+  "name": "featureStateView",
+  "version": "1.0.0",
+  "description": "Basic react app to display the state of every controls of every features for a given part",
+  "repository": "https://github.com/bijay007/features-control.git",
+  "author": "Bijay Timilsina <bjtimi.007@gmail.com>",
+  "license": "MIT",
+  "private": false,
+  "scripts": {
+    "lint": "eslint .",
+    "serve:dev": "webpack-dev-server --hot --inline",
+    "build:dev": "webpack --mode development",
+    "start": "npm run build:dev && npm run serve:dev"
+  },
+  "engines": {
+    "node": ">=8 <11"
+  },
+  "dependencies": {
+    "emotion": "^9.2.12",
+    "prop-types": "^15.6.2",
+    "react": "^16.6.3",
+    "react-dom": "^16.6.3"
+  },
+  "devDependencies": {
+    "babel-core": "^6.26.3",
+    "babel-eslint": "^10.0.1",
+    "babel-loader": "^7.1.4",
+    "babel-polyfill": "^6.26.0",
+    "babel-preset-env": "^1.7.0",
+    "babel-preset-react": "^6.24.1",
+    "eslint": "^5.9.0",
+    "eslint-config-airbnb": "^17.1.0",
+    "eslint-plugin-import": "^2.14.0",
+    "eslint-plugin-jsx-a11y": "^6.1.2",
+    "eslint-plugin-react": "^7.11.1",
+    "html-webpack-plugin": "^3.2.0",
+    "webpack": "^4.12.2",
+    "webpack-cli": "^3.0.8",
+    "webpack-dev-server": "^3.1.4"
+  }
+}
