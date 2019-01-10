@@ -1,51 +1,34 @@
 import React, { PureComponent } from 'react';
+import axios from 'axios';
 import PartMainBody from './components/part/part-table';
 import { appContainer } from './common/styles';
 
 export default class App extends PureComponent {
   constructor() {
     super();
-    this.hi = 'hi';
+    this.state = {
+      partDetails: {},
+    };
+  }
+
+  componentDidMount() {
+    const partNum = 1;
+    axios.get(`client/public/assets/part${partNum}-data.json`)
+      .then(data => this.setState({ partDetails: data.data }))
+      .catch(error => console.error(error));
   }
 
   render() {
-    const part1 = { // hard-coded data
-      name: 'Part A',
-      features: [
-        {
-          name: 'Feature 1',
-          controls: [
-            {
-              name: 'X',
-              deviation: 0,
-              deviationTotal: 0,
-              tolerance: 0,
-            },
-            {
-              name: 'Y',
-              deviation: 0,
-              deviationTotal: 1,
-              tolerance: 0,
-            },
-          ],
-        },
-        {
-          name: 'Feature 2',
-          controls: [
-            {
-              name: 'Z',
-              deviation: 1,
-              deviationTotal: 0,
-              tolerance: 1,
-            },
-          ],
-        },
-      ],
-    };
-    return (
-      <main className={appContainer}>
-        <PartMainBody part={part1} />
-      </main>
-    );
+    const { partDetails } = this.state;
+    if (partDetails.name) {
+      return (
+        <main className={appContainer}>
+          {
+            <PartMainBody part={partDetails} />
+          }
+        </main>
+      );
+    }
+    return null;
   }
 }

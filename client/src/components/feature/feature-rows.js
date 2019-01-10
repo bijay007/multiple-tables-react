@@ -7,7 +7,7 @@ const ControlMeasurements = (props) => {
   const { listControls } = props;
   return (
     listControls.map(control => (
-      <tr key={control.name.toString()}>
+      <tr key={Math.random().toString(10).substr(2, 6)}>
         <td>{control.name || 'Control'}</td>
         <td>{control.deviation || 0}</td>
         <td>{control.deviationTotal || 0}</td>
