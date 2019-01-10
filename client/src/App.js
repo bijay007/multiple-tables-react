@@ -1,5 +1,6 @@
 import React, { PureComponent } from 'react';
 import PartMainBody from './components/part/part-table';
+import { appContainer } from './common/styles';
 
 export default class App extends PureComponent {
   constructor() {
@@ -42,9 +43,9 @@ export default class App extends PureComponent {
       ],
     };
     return (
-      <div>
+      <main className={appContainer}>
         <PartMainBody part={part1} />
-      </div>
+      </main>
     );
   }
 }

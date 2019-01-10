@@ -1,5 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import { partBody, partHeader, partTable } from '../../common/styles';
 import FeatureTable from '../feature/feature-table';
 
 // This dumb component receives part object containing part name and features array
@@ -8,18 +9,18 @@ import FeatureTable from '../feature/feature-table';
 const PartMainBody = (props) => {
   const { part } = props;
   return (
-    <React.Fragment>
-      <header>
+    <section className={partBody}>
+      <header className={partHeader}>
         {part.name}
       </header>
-      <main>
+      <section className={partTable}>
         {
           part.features.map(feature => (
             <FeatureTable feature={feature} key={feature.name.toString()} />
           ))
         }
-      </main>
-    </React.Fragment>
+      </section>
+    </section>
   );
 };
 
