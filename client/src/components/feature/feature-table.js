@@ -3,8 +3,7 @@ import PropTypes from 'prop-types';
 import { featureTable, featureName, featureControls } from '../../common/styles';
 import ControlMeasurements from './feature-rows';
 
-// This dumb component creates a table containing 4 headers and an empty body
-// and passes an array of controls to another component that creates the rows for the body
+// This dumb component creates outer table and passes a control list to table body component
 
 const FeatureTable = (props) => {
   const { feature } = props;

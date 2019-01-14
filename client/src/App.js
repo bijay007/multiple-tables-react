@@ -7,14 +7,36 @@ export default class App extends PureComponent {
   constructor() {
     super();
     this.state = {
+      partNum: 0,
       partDetails: {},
     };
+    this.getNextPartNum = this.getNextPartNum.bind(this);
+    this.fetchJson = this.fetchJson.bind(this);
   }
 
   componentDidMount() {
-    const partNum = 1;
-    axios.get(`client/public/assets/part${partNum}-data.json`)
-      .then(data => this.setState({ partDetails: data.data }))
+    this.intervalFunc = setInterval(() => this.fetchJson(), 10000);
+    this.fetchJson();
+  }
+
+  componentWillUnmount() {
+    clearInterval(this.intervalFunc);
+  }
+
+  getNextPartNum() { // basic mock function to switch between the 2 available files
+    const { partNum } = this.state;
+    if (partNum === 1) {
+      return 2;
+    }
+    return 1;
+  }
+
+  fetchJson() {
+    axios.get(`client/public/assets/part${this.getNextPartNum()}-data.json`)
+      .then(data => this.setState({
+        partDetails: data.data,
+        partNum: this.getNextPartNum(),
+      }))
       .catch(error => console.error(error));
   }
 
