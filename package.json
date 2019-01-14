@@ -8,7 +8,8 @@
   "private": false,
   "scripts": {
     "lint": "eslint .",
-    "serve:dev": "webpack-dev-server --hot --inline",
+    "serve:client": "webpack-dev-server --hot --inline",
+    "serve:dev": "node ./server/index.js",
     "build:dev": "webpack --mode development",
     "start": "npm run build:dev && npm run serve:dev"
   },
@@ -18,6 +19,7 @@
   "dependencies": {
     "axios": "^0.18.0",
     "emotion": "^9.2.12",
+    "express": "^4.16.4",
     "prop-types": "^15.6.2",
     "react": "^16.6.3",
     "react-dom": "^16.6.3"
