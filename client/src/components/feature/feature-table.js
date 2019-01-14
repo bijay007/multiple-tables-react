@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { featureTable, featureName } from '../../common/styles';
+import { featureTable, featureName, featureControls } from '../../common/styles';
 import ControlMeasurements from './feature-rows';
 
 // This dumb component creates a table containing 4 headers and an empty body
@@ -10,11 +10,13 @@ const FeatureTable = (props) => {
   const { feature } = props;
   return (
     <table className={featureTable}>
-      <thead>
-        <tr className={featureName}>
-          <th>{feature.name}</th>
-        </tr>
+      <thead className={featureName}>
         <tr>
+          <td>{feature.name}</td>
+        </tr>
+      </thead>
+      <thead>
+        <tr className={featureControls}>
           <th>Control</th>
           <th>Dev</th>
           <th>Dev Out</th>

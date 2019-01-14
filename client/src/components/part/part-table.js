@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { partBody, partHeader, partTable } from '../../common/styles';
+import { partHeader, partTable } from '../../common/styles';
 import FeatureTable from '../feature/feature-table';
 
 // This dumb component receives part object containing part name and features array
@@ -9,7 +9,7 @@ import FeatureTable from '../feature/feature-table';
 const PartMainBody = (props) => {
   const { part } = props;
   return (
-    <section className={partBody}>
+    <section>
       <header className={partHeader}>
         {part.name}
       </header>

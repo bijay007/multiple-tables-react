@@ -3,46 +3,56 @@
 import { css } from 'emotion';
 
 const appContainer = css({
-  display: 'flex',
-  justifyContent: 'center',
+  boxSizing: 'border-box',
   margin: '40px auto',
-  width: '80%',
-  maxWidth: '85rem',
-});
-
-const partBody = css({
-  display: 'flex',
-  flexFlow: 'column nowrap',
+  width: '90%',
+  maxWidth: '100rem',
 });
 
 const partHeader = css({
-  fontSize: '18px',
+  fontSize: '1.2rem',
   fontWeight: 'bold',
-  padding: '10px',
+  padding: '0.5rem',
 });
 
 const partTable = css({
-  display: 'flex',
-  padding: '10px',
-  width: '100%',
-  flexFlow: 'row wrap',
-  justifyContent: 'space-between',
+  display: 'grid',
+  gridGap: '0.25rem',
+  gridTemplateRows: 'minmax(15rem, auto)',
+  gridTemplateColumns: 'repeat(auto-fit, minmax(13rem, max-content))',
+  gridAutoFlow: 'row',
+  alignItems: 'baseline',
+  padding: '0.5rem',
 });
 
 const featureTable = css({
+  display: 'grid',
   boxShadow: '0px 0px 0.5px 0.5px',
 });
 
 const featureName = css({
+  padding: '0.2rem',
+  color: '#fff',
   backgroundColor: 'green',
 });
 
+const featureControls = css({
+  '& th': {
+    padding: '0.5rem',
+  },
+  '& th:first-child': {
+    paddingRight: '0.75rem',
+  },
+  '& td': {
+    padding: '0.9rem',
+  },
+});
 
 export {
   appContainer,
-  partBody,
   partHeader,
   partTable,
   featureTable,
   featureName,
+  featureControls,
 };
