@@ -4,11 +4,11 @@ const checkFeatureStatus = (index, arrControls) => {
   const randomControl = arrControls[index];
   let status = '';
   if (randomControl.deviationTotal > randomControl.tolerance) {
-    status = 'Red';
+    status = 'red';
   } else if (randomControl.deviationTotal === randomControl.tolerance) {
-    status = 'Yellow';
+    status = 'yellow';
   } else {
-    status = 'Green';
+    status = 'green';
   }
   return status;
 };

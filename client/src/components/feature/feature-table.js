@@ -6,7 +6,7 @@ import FeatureHeader from './feature-header';
 import checkFeatureStatus from '../../common/helpers';
 
 
-// This dumb component creates outer table and passes a control list to table body component
+// This component passes data to feature-header and feature-row component
 
 export default class FeatureTable extends React.Component {
   constructor() {

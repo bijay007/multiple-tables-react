@@ -18,9 +18,7 @@ const FeatureHeader = (props) => {
 
 export default FeatureHeader;
 
-FeatureHeader.propTypes = {
-  featureDetails: PropTypes.arrayOf({
-    featureName: PropTypes.string.isRequired,
-    featureStatus: PropTypes.string.isRequired,
-  }).isRequired,
-};
+FeatureHeader.propTypes = PropTypes.arrayOf({
+  featureName: PropTypes.string.isRequired,
+  featureStatus: PropTypes.string.isRequired,
+}).isRequired;
