@@ -6,146 +6,146 @@
       "controls": [
         {
           "name": "X",
-          "deviation": 0,
-          "deviationTotal": 0,
-          "tolerance": 0
+          "deviation": "",
+          "deviationTotal": "",
+          "tolerance": ""
         },
         {
           "name": "Y",
-          "deviation": 0,
-          "deviationTotal": 1,
-          "tolerance": 0
+          "deviation": "",
+          "deviationTotal": "",
+          "tolerance": ""
         },
         {
           "name": "Z",
-          "deviation": 0,
-          "deviationTotal": 0,
-          "tolerance": 0
+          "deviation": "",
+          "deviationTotal": "",
+          "tolerance": ""
         },
         {
           "name": "Diameter",
-          "deviation": 0,
-          "deviationTotal": 1,
-          "tolerance": 0
+          "deviation": "",
+          "deviationTotal": "",
+          "tolerance": ""
         },
         {
           "name": "X",
-          "deviation": 0,
-          "deviationTotal": 0,
-          "tolerance": 0
+          "deviation": "",
+          "deviationTotal": "",
+          "tolerance": ""
         },
         {
           "name": "Y",
-          "deviation": 0,
-          "deviationTotal": 1,
-          "tolerance": 0
+          "deviation": "",
+          "deviationTotal": "",
+          "tolerance": ""
         },
         {
           "name": "Z",
-          "deviation": 0,
-          "deviationTotal": 0,
-          "tolerance": 0
+          "deviation": "",
+          "deviationTotal": "",
+          "tolerance": ""
         },
         {
           "name": "Diameter",
-          "deviation": 0,
-          "deviationTotal": 1,
-          "tolerance": 0
+          "deviation": "",
+          "deviationTotal": "",
+          "tolerance": ""
         },
         {
           "name": "X",
-          "deviation": 0,
-          "deviationTotal": 0,
-          "tolerance": 0
+          "deviation": "",
+          "deviationTotal": "",
+          "tolerance": ""
         },
         {
           "name": "Y",
-          "deviation": 0,
-          "deviationTotal": 1,
-          "tolerance": 0
+          "deviation": "",
+          "deviationTotal": "",
+          "tolerance": ""
         },
         {
           "name": "Z",
-          "deviation": 0,
-          "deviationTotal": 0,
-          "tolerance": 0
+          "deviation": "",
+          "deviationTotal": "",
+          "tolerance": ""
         },
         {
           "name": "Diameter",
-          "deviation": 0,
-          "deviationTotal": 1,
-          "tolerance": 0
+          "deviation": "",
+          "deviationTotal": "",
+          "tolerance": ""
         },
         {
           "name": "X",
-          "deviation": 0,
-          "deviationTotal": 0,
-          "tolerance": 0
+          "deviation": "",
+          "deviationTotal": "",
+          "tolerance": ""
         },
         {
           "name": "Y",
-          "deviation": 0,
-          "deviationTotal": 1,
-          "tolerance": 0
+          "deviation": "",
+          "deviationTotal": "",
+          "tolerance": ""
         },
         {
           "name": "Z",
-          "deviation": 0,
-          "deviationTotal": 0,
-          "tolerance": 0
+          "deviation": "",
+          "deviationTotal": "",
+          "tolerance": ""
         },
         {
           "name": "Diameter",
-          "deviation": 0,
-          "deviationTotal": 1,
-          "tolerance": 0
+          "deviation": "",
+          "deviationTotal": "",
+          "tolerance": ""
         },
         {
           "name": "X",
-          "deviation": 0,
-          "deviationTotal": 0,
-          "tolerance": 0
+          "deviation": "",
+          "deviationTotal": "",
+          "tolerance": ""
         },
         {
           "name": "Y",
-          "deviation": 0,
-          "deviationTotal": 1,
-          "tolerance": 0
+          "deviation": "",
+          "deviationTotal": "",
+          "tolerance": ""
         },
         {
           "name": "Z",
-          "deviation": 0,
-          "deviationTotal": 0,
-          "tolerance": 0
+          "deviation": "",
+          "deviationTotal": "",
+          "tolerance": ""
         },
         {
           "name": "Diameter",
-          "deviation": 0,
-          "deviationTotal": 1,
-          "tolerance": 0
+          "deviation": "",
+          "deviationTotal": "",
+          "tolerance": ""
         },
         {
           "name": "X",
-          "deviation": 0,
-          "deviationTotal": 0,
-          "tolerance": 0
+          "deviation": "",
+          "deviationTotal": "",
+          "tolerance": ""
         },
         {
           "name": "Y",
-          "deviation": 0,
-          "deviationTotal": 1,
-          "tolerance": 0
+          "deviation": "",
+          "deviationTotal": "",
+          "tolerance": ""
         },
         {
           "name": "Z",
-          "deviation": 0,
-          "deviationTotal": 0,
+          "deviation": "",
+          "deviationTotal": "",
           "tolerance": 0
         },
         {
           "name": "Diameter",
-          "deviation": 0,
-          "deviationTotal": 1,
+          "deviation": "",
+          "deviationTotal": "",
           "tolerance": 0
         }
       ]
@@ -156,25 +156,25 @@
         {
           "name": "X",
           "deviation": 1,
-          "deviationTotal": 0,
+          "deviationTotal": "",
           "tolerance": 1
         },
         {
           "name": "Y",
           "deviation": 1,
-          "deviationTotal": 0,
+          "deviationTotal": "",
           "tolerance": 1
         },
         {
           "name": "Z",
           "deviation": 1,
-          "deviationTotal": 0,
+          "deviationTotal": "",
           "tolerance": 1
         },
         {
           "name": "Diameter",
           "deviation": 1,
-          "deviationTotal": 0,
+          "deviationTotal": "",
           "tolerance": 1
         }
       ]
@@ -185,25 +185,25 @@
         {
           "name": "X",
           "deviation": 1,
-          "deviationTotal": 0,
+          "deviationTotal": "",
           "tolerance": 1
         },
         {
           "name": "Y",
           "deviation": 1,
-          "deviationTotal": 0,
+          "deviationTotal": "",
           "tolerance": 1
         },
         {
           "name": "Z",
           "deviation": 1,
-          "deviationTotal": 0,
+          "deviationTotal": "",
           "tolerance": 1
         },
         {
           "name": "Diameter",
           "deviation": 1,
-          "deviationTotal": 0,
+          "deviationTotal": "",
           "tolerance": 1
         }
       ]
@@ -214,25 +214,25 @@
         {
           "name": "X",
           "deviation": 1,
-          "deviationTotal": 0,
+          "deviationTotal": "",
           "tolerance": 1
         },
         {
           "name": "Y",
           "deviation": 1,
-          "deviationTotal": 0,
+          "deviationTotal": "",
           "tolerance": 1
         },
         {
           "name": "Z",
           "deviation": 1,
-          "deviationTotal": 0,
+          "deviationTotal": "",
           "tolerance": 1
         },
         {
           "name": "Diameter",
           "deviation": 1,
-          "deviationTotal": 0,
+          "deviationTotal": "",
           "tolerance": 1
         }
       ]
@@ -243,25 +243,25 @@
         {
           "name": "X",
           "deviation": 1,
-          "deviationTotal": 0,
+          "deviationTotal": "",
           "tolerance": 1
         },
         {
           "name": "Y",
           "deviation": 1,
-          "deviationTotal": 0,
+          "deviationTotal": "",
           "tolerance": 1
         },
         {
           "name": "Z",
           "deviation": 1,
-          "deviationTotal": 0,
+          "deviationTotal": "",
           "tolerance": 1
         },
         {
           "name": "Diameter",
           "deviation": 1,
-          "deviationTotal": 0,
+          "deviationTotal": "",
           "tolerance": 1
         }
       ]
@@ -272,25 +272,25 @@
         {
           "name": "X",
           "deviation": 1,
-          "deviationTotal": 0,
+          "deviationTotal": "",
           "tolerance": 1
         },
         {
           "name": "Y",
           "deviation": 1,
-          "deviationTotal": 0,
+          "deviationTotal": "",
           "tolerance": 1
         },
         {
           "name": "Z",
           "deviation": 1,
-          "deviationTotal": 0,
+          "deviationTotal": "",
           "tolerance": 1
         },
         {
           "name": "Diameter",
           "deviation": 1,
-          "deviationTotal": 0,
+          "deviationTotal": "",
           "tolerance": 1
         }
       ]
@@ -301,73 +301,73 @@
         {
           "name": "X",
           "deviation": 1,
-          "deviationTotal": 0,
+          "deviationTotal": "",
           "tolerance": 1
         },
         {
           "name": "Y",
           "deviation": 1,
-          "deviationTotal": 0,
+          "deviationTotal": "",
           "tolerance": 1
         },
         {
           "name": "Z",
           "deviation": 1,
-          "deviationTotal": 0,
+          "deviationTotal": "",
           "tolerance": 1
         },
         {
           "name": "Diameter",
           "deviation": 1,
-          "deviationTotal": 0,
+          "deviationTotal": "",
           "tolerance": 1
         },
         {
           "name": "X",
           "deviation": 1,
-          "deviationTotal": 0,
+          "deviationTotal": "",
           "tolerance": 1
         },
         {
           "name": "Y",
           "deviation": 1,
-          "deviationTotal": 0,
+          "deviationTotal": "",
           "tolerance": 1
         },
         {
           "name": "Z",
           "deviation": 1,
-          "deviationTotal": 0,
+          "deviationTotal": "",
           "tolerance": 1
         },
         {
           "name": "Diameter",
           "deviation": 1,
-          "deviationTotal": 0,
+          "deviationTotal": "",
           "tolerance": 1
         },
         {
           "name": "X",
           "deviation": 1,
-          "deviationTotal": 0,
+          "deviationTotal": "",
           "tolerance": 1
         },
         {
           "name": "Y",
           "deviation": 1,
-          "deviationTotal": 0,
+          "deviationTotal": "",
           "tolerance": 1
         },
         {
           "name": "Z",
           "deviation": 1,
-          "deviationTotal": 0,
+          "deviationTotal": "",
           "tolerance": 1
         },
         {
           "name": "Diameter",
           "deviation": 1,
-          "deviationTotal": 0,
+          "deviationTotal": "",
           "tolerance": 1
         }
       ]

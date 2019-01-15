@@ -1,37 +1,62 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { featureTable, featureName, featureControls } from '../../common/styles';
-import ControlMeasurements from './feature-rows';
+import { featureTable, featureControls } from '../../common/styles';
+import ListControls from './feature-rows';
+import FeatureHeader from './feature-header';
+import checkFeatureStatus from '../../common/helpers';
+
 
 // This dumb component creates outer table and passes a control list to table body component
 
-const FeatureTable = (props) => {
-  const { feature } = props;
-  return (
-    <table className={featureTable}>
-      <thead className={featureName}>
-        <tr>
-          <td>{feature.name}</td>
-        </tr>
-      </thead>
-      <thead>
-        <tr className={featureControls}>
-          <th>Control</th>
-          <th>Dev</th>
-          <th>Dev Out</th>
-          <th>Tol</th>
-        </tr>
-      </thead>
-      {
-        <tbody>
-          <ControlMeasurements listControls={feature.controls} />
-        </tbody>
-      }
-    </table>
-  );
-};
+export default class FeatureTable extends React.Component {
+  constructor() {
+    super();
+    this.state = {
+      featureStatus: '',
+    };
+    this.getFeatureStatus = this.getFeatureStatus.bind(this);
+  }
 
-export default FeatureTable;
+  componentDidMount() {
+    this.getFeatureStatus();
+  }
+
+  componentWillReceiveProps() {
+    this.getFeatureStatus();
+  }
+
+  getFeatureStatus() {
+    const { feature } = this.props;
+    // using random control (minsize is 4) to decide feature status (for mocking purpose)
+    const randomControl = Math.round(Math.random() * 3);
+    const statusColor = checkFeatureStatus(randomControl, feature.controls);
+    this.setState({ featureStatus: statusColor });
+  }
+
+  render() {
+    const { feature } = this.props;
+    const featureName = feature.name;
+    const { featureStatus } = this.state;
+    return (
+      <table className={featureTable}>
+        <FeatureHeader featureDetails={[featureName, featureStatus]} />
+        <thead>
+          <tr className={featureControls}>
+            <th>Control</th>
+            <th>Dev</th>
+            <th>Dev Out</th>
+            <th>Tol</th>
+          </tr>
+        </thead>
+        {
+          <tbody>
+            <ListControls listControls={feature.controls} />
+          </tbody>
+        }
+      </table>
+    );
+  }
+}
 
 FeatureTable.propTypes = {
   feature: PropTypes.shape({

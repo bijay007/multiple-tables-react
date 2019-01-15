@@ -33,7 +33,6 @@ const featureTable = css({
 const featureName = css({
   padding: '0.2rem',
   color: '#fff',
-  backgroundColor: 'green',
 });
 
 const featureControls = css({
