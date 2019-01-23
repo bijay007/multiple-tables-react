@@ -1,10 +1,10 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { featureTable, featureControls } from '../../common/styles';
-import ListControls from './feature-rows';
+import { featureTable } from '../../common/styles';
+import FeatureName from './feature-name';
 import FeatureHeader from './feature-header';
+import FeatureControls from './feature-controls';
 import checkFeatureStatus from '../../common/helpers';
-
 
 // This component passes data to feature-header and feature-row component
 
@@ -35,25 +35,14 @@ export default class FeatureTable extends React.Component {
 
   render() {
     const { feature } = this.props;
-    const featureName = feature.name;
     const { featureStatus } = this.state;
+    const featureName = feature.name;
     return (
-      <table className={featureTable}>
-        <FeatureHeader featureDetails={[featureName, featureStatus]} />
-        <thead>
-          <tr className={featureControls}>
-            <th>Control</th>
-            <th>Dev</th>
-            <th>Dev Out</th>
-            <th>Tol</th>
-          </tr>
-        </thead>
-        {
-          <tbody>
-            <ListControls listControls={feature.controls} />
-          </tbody>
-        }
-      </table>
+      <div className={featureTable}>
+        <FeatureName featureDetails={[featureName, featureStatus]} />
+        <FeatureHeader />
+        <FeatureControls listControls={feature.controls} />
+      </div>
     );
   }
 }

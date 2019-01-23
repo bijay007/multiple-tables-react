@@ -1,24 +1,13 @@
 import React from 'react';
-import PropTypes from 'prop-types';
-import { featureName } from '../../common/styles';
+import { featureControls } from '../../common/styles';
 
-// This dumb component receives feature name and status and prints it
-
-const FeatureHeader = (props) => {
-  const { featureDetails } = props;
-  const statusColor = featureDetails[1];
-  return (
-    <thead className={featureName} style={{ backgroundColor: statusColor }}>
-      <tr>
-        <td>{featureDetails[0]}</td>
-      </tr>
-    </thead>
-  );
-};
+const FeatureHeader = () => (
+  <div className={featureControls}>
+    <div>Control</div>
+    <div>Dev</div>
+    <div>Dev Out</div>
+    <div>Tol</div>
+  </div>
+);
 
 export default FeatureHeader;
-
-FeatureHeader.propTypes = PropTypes.arrayOf({
-  featureName: PropTypes.string.isRequired,
-  featureStatus: PropTypes.string.isRequired,
-}).isRequired;

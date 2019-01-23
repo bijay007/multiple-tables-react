@@ -20,8 +20,6 @@ const partTable = css({
   gridGap: '0.25rem',
   gridTemplateRows: 'minmax(15rem, auto)',
   gridTemplateColumns: 'repeat(auto-fill, minmax(13rem, max-content))',
-  gridColumnStart: 'auto',
-  gridRowStart: 'auto',
   gridAutoFlow: 'row',
   alignItems: 'baseline',
   padding: '0.5rem',
@@ -30,6 +28,7 @@ const partTable = css({
 const featureTable = css({
   display: 'grid',
   boxShadow: '0px 0px 0.5px 0.5px',
+  padding: '0.1rem',
 });
 
 const featureName = css({
@@ -38,15 +37,9 @@ const featureName = css({
 });
 
 const featureControls = css({
-  '& th': {
-    padding: '0.5rem',
-  },
-  '& th:first-child': {
-    paddingRight: '0.75rem',
-  },
-  '& td': {
-    padding: '0.9rem',
-  },
+  display: 'grid',
+  gridTemplateColumns: 'repeat(4, 1fr)',
+  justifyItems: 'center',
 });
 
 export {
